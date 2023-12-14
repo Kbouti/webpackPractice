@@ -30,8 +30,12 @@
 // create css file and IMPORT IT AT THE BEGINNING OF YOUR INDEX.JS FILE (I suspect this is what I was missing in weatherApp, but it still isn't working because I'm getting a fatal error when I try to run // git subtree push --prefix dist origin-gh-pages)
 // npm run build
 
+// import puppies.png image, configure webpack with image loaders
+// npm run build
+
 import _ from 'lodash';
 import './style.css';
+import Icon from './puppies.png';
 
 function component() {
     const element = document.createElement(`div`);
@@ -39,7 +43,9 @@ function component() {
     // Lodash, now imported by this script
     element.innerHTML = _.join([`hello`, `webpack`], ` `);
     element.classList.add(`hello`);
-
+const myIcon = new Image();
+myIcon.src = Icon;
+element.appendChild(myIcon);
     return element;
 }
 document.body.appendChild(component());
