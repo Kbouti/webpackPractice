@@ -18,6 +18,10 @@
 
 // Create webpack.config.js file and populate with module.exports
 // npx webpack --config webpack.config.js
+// add build: webpack to package.json file. Now npm run build can be used in the command line
+// npm run build
+// Getting started section complete. Next is Asset management:
+// https://webpack.js.org/guides/asset-management
 
 
 import _ from 'lodash';
