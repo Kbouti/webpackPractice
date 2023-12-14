@@ -16,6 +16,9 @@
 // Remove lodash script tag in html and alter src/script.js to simply "main.js"
 // npx webpack
 
+// Create webpack.config.js file and populate with module.exports
+// npx webpack --config webpack.config.js
+
 
 import _ from 'lodash';
 
