@@ -27,7 +27,7 @@
 // First alter the name of our script to bundle.js in html and webpack.config (I don't know why....)
 // npm install --save-dev style-loader css-loader
 // Add css and style-loader rules to webpack.config file
-// create css file and IMPORT IT AT THE BEGINNING OF YOUR INDEX.JS FILE
+// create css file and IMPORT IT AT THE BEGINNING OF YOUR INDEX.JS FILE (I suspect this is what I was missing in weatherApp, but it still isn't working because I'm getting a fatal error when I try to run // git subtree push --prefix dist origin-gh-pages)
 // npm run build
 
 import _ from 'lodash';
