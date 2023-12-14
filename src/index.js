@@ -27,14 +27,18 @@
 // First alter the name of our script to bundle.js in html and webpack.config (I don't know why....)
 // npm install --save-dev style-loader css-loader
 // Add css and style-loader rules to webpack.config file
+// create css file and IMPORT IT AT THE BEGINNING OF YOUR INDEX.JS FILE
+// npm run build
 
 import _ from 'lodash';
+import './style.css';
 
 function component() {
     const element = document.createElement(`div`);
 
     // Lodash, now imported by this script
     element.innerHTML = _.join([`hello`, `webpack`], ` `);
+    element.classList.add(`hello`);
 
     return element;
 }
