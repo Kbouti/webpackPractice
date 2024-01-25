@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import myName from './myName';
+import {myName, anotherFunction} from './myName';
 // import anotherFunction from './myName';
 
 function component(){
@@ -16,6 +16,6 @@ document.body.appendChild(newElement);
 }
 sayHello(`Kevin`)
 
-// anotherFunction();
+anotherFunction();
 
 document.body.appendChild(component());

@@ -5,4 +5,6 @@ function anotherFunction(){
     console.log(`fuckery`);
 }
 
-export default myName;
+export {myName, anotherFunction} ;
+// export default anotherFunction;
+
